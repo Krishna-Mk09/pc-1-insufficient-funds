@@ -1,12 +1,10 @@
 package com.jap.customexception;
 
-import com.jap.customexception.Account;
-import com.jap.customexception.InsufficientFundException;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 
 public class AccountTests {
@@ -27,7 +25,7 @@ public class AccountTests {
     public void givenValidWithdrawAmountThenReturnNewBalance() throws InsufficientFundException {
         int newBalance = account.withdraw(500);
 
-        assertEquals(4500,newBalance);
+        assertEquals(4500, newBalance);
     }
 
     @Test
