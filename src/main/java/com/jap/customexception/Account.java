@@ -29,8 +29,9 @@ public class Account {
      *
      */
     public int  withdraw(int  amount) throws InsufficientFundException{
-
-        return 1;
+        if (amount > accountBalance)
+            throw new InsufficientFundException("amount should be less than account balance");
+        return accountBalance - amount;
     }
 
 
