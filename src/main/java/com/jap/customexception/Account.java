@@ -8,11 +8,15 @@ public class Account {
         this.accountBalance = accountBalance;
     }
 
+    public int getAccountBalance() {
+        return accountBalance;
+    }
+
+    public void setAccountBalance(int accountBalance) {
+        this.accountBalance = accountBalance;
+    }
+
     //create getter and setter
-
-
-
-
 
 
     /**
