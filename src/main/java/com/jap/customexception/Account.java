@@ -1,7 +1,6 @@
 package com.jap.customexception;
 
 public class Account {
-
     private int accountBalance;
 
     public Account(int accountBalance) {
@@ -15,9 +14,7 @@ public class Account {
     public void setAccountBalance(int accountBalance) {
         this.accountBalance = accountBalance;
     }
-
     //create getter and setter
-
 
     /**
      * This method returns the new balance deducting the withdraw amount from the balance
@@ -31,6 +28,4 @@ public class Account {
         if (amount > accountBalance) throw new InsufficientFundException("amount should be less than account balance");
         return accountBalance - amount;
     }
-
-
 }
